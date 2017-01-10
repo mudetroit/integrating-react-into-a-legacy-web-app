@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Integrating React into a legacy web app</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -20,12 +20,94 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+        <style>
+            .reveal section img {
+                border: 0;
+                box-shadow: initial;
+            }
+            .reveal .slides {
+                text-align: left;
+            }
+            .reveal .slides section>* {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .reveal .poop-emoji {
+                margin-bottom: -10px;
+            }
+        </style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown="slides/title.md"></section>
+    			<section data-markdown="slides/about-me.md"></section>
+    			<section
+                    data-markdown="slides/what-is-a-legacy-web-app.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+    			<section
+                    data-markdown="slides/what-are-some-js-frameworks-libraries-we-might-want-to-replace.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+    			<section
+                    data-markdown="slides/why-react.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+                <section
+                    data-markdown="slides/just-rewrite-it.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+                <section
+                    data-markdown="slides/so-should-we-be-doing-this.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+                <section
+                    data-markdown="slides/so-where-do-we-start.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+                <section
+                    data-markdown="slides/lets-take-a-quick-look-at-our-example-project.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+                <section
+                    data-markdown="slides/start-making-a-little-library.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+                <section
+                    data-markdown="slides/but-I-need-to-do-something-useful.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+                <section
+                    data-markdown="slides/hold-on-a-minute.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+                <section
+                    data-markdown="slides/okay-but-I-use-backbone.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+                <section
+                    data-markdown="slides/what-is-next.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
+                <section
+                    data-markdown="slides/conclusion.md"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                ></section>
 			</div>
 		</div>
 
