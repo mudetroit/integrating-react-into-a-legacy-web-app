@@ -41,6 +41,12 @@ var app = app || {};
 			// from being re-rendered for every model. Only renders when the 'reset'
 			// event is triggered at the end of the fetch.
 			app.todos.fetch({reset: true});
+
+            var Footer = React.createElement(
+                Components.Footer,
+                {todos: app.todos},
+                []);
+            ReactDOM.render(Footer, this.$footer.get(0));
 		},
 
 		// Re-rendering the App just means refreshing the statistics -- the rest
